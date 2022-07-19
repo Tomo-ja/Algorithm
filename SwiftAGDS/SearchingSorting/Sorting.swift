@@ -121,7 +121,11 @@ func quickSortSlow<T: Comparable>(_ arr: [T]) -> [T] {
 // Time Complexity: O(N lgN) -> technically O(N^2) in the worst case
 // Space Complexity: O(1)
 func quickSort<T: Comparable>(_ arr: inout [T], _ start: Int, _ end: Int) {
-  // TODO
+	if start >= end { return }
+
+	let pivotIndex = partition(&arr, start, end)
+	quickSort(&arr, start, pivotIndex - 1)
+	quickSort(&arr, pivotIndex + 1, end)
 }
 
 /// Returns the index of the pivot
@@ -131,6 +135,36 @@ func quickSort<T: Comparable>(_ arr: inout [T], _ start: Int, _ end: Int) {
 ///   - end: the end index
 /// - Returns: the index of the pivot after partitioning
 func partition<T: Comparable>(_ arr: inout [T], _ start: Int, _ end: Int) -> Int {
-  // TODO
-  return 0
+
+	var leftPoint = start
+	var rightPoint = end
+	var isUnsortGroupLeft = true
+	let pivot = arr[rightPoint]
+	
+	while leftPoint < rightPoint {
+		if isUnsortGroupLeft {
+			if arr[leftPoint] > pivot {
+				switchPosition(&arr, leftPoint, rightPoint)
+				rightPoint -= 1
+				isUnsortGroupLeft = false
+			} else {
+				leftPoint += 1
+			}
+		} else {
+			if arr[rightPoint] < pivot {
+				switchPosition(&arr, rightPoint, leftPoint)
+				leftPoint += 1
+				isUnsortGroupLeft = true
+			} else {
+				rightPoint -= 1
+			}
+		}
+	}
+	return rightPoint
+}
+
+func switchPosition<T: Comparable> (_ arr: inout [T], _ index1: Int, _ index2: Int) {
+	let temp = arr[index2]
+	arr[index2] = arr[index1]
+	arr[index1] = temp
 }
