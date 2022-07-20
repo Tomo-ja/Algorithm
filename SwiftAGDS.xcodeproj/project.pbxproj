@@ -13,6 +13,9 @@
 		E558EB86287F4A3700BCE968 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558EB85287F4A3700BCE968 /* QueensSolver.swift */; };
 		E558EBBF2885BD6D00BCE968 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558EBBE2885BD6D00BCE968 /* Searching.swift */; };
 		E558EBC22885BFDE00BCE968 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558EBC12885BFDE00BCE968 /* Sorting.swift */; };
+		E558EBC528886A7C00BCE968 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558EBC428886A7C00BCE968 /* Bag.swift */; };
+		E558EBC728886AA500BCE968 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558EBC628886AA500BCE968 /* Queue.swift */; };
+		E558EBC928886AB000BCE968 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558EBC828886AB000BCE968 /* Stack.swift */; };
 		E5B9F714287C9D6D00F8EDF3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9F713287C9D6D00F8EDF3 /* main.swift */; };
 		E5B9F71C287C9DA100F8EDF3 /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9F71B287C9DA100F8EDF3 /* Recursion.swift */; };
 		E5B9F722287DCFDD00F8EDF3 /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9F721287DCFDD00F8EDF3 /* String+DPStringTool.swift */; };
@@ -37,6 +40,9 @@
 		E558EB85287F4A3700BCE968 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		E558EBBE2885BD6D00BCE968 /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 		E558EBC12885BFDE00BCE968 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		E558EBC428886A7C00BCE968 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		E558EBC628886AA500BCE968 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E558EBC828886AB000BCE968 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		E5B9F710287C9D6D00F8EDF3 /* SwiftAGDS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAGDS; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B9F713287C9D6D00F8EDF3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E5B9F71B287C9DA100F8EDF3 /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
@@ -73,6 +79,16 @@
 			path = SearchingSorting;
 			sourceTree = "<group>";
 		};
+		E558EBC328886A5800BCE968 /* DataStructures1 */ = {
+			isa = PBXGroup;
+			children = (
+				E558EBC428886A7C00BCE968 /* Bag.swift */,
+				E558EBC628886AA500BCE968 /* Queue.swift */,
+				E558EBC828886AB000BCE968 /* Stack.swift */,
+			);
+			path = DataStructures1;
+			sourceTree = "<group>";
+		};
 		E5B9F707287C9D6D00F8EDF3 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +108,7 @@
 		E5B9F712287C9D6D00F8EDF3 /* SwiftAGDS */ = {
 			isa = PBXGroup;
 			children = (
+				E558EBC328886A5800BCE968 /* DataStructures1 */,
 				E558EBBD2885BD3400BCE968 /* SearchingSorting */,
 				E558EB82287F4A0000BCE968 /* MiniProject2 */,
 				E5B9F71D287CA07D00F8EDF3 /* Utils */,
@@ -178,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E558EBC528886A7C00BCE968 /* Bag.swift in Sources */,
 				E5B9F722287DCFDD00F8EDF3 /* String+DPStringTool.swift in Sources */,
 				E558EB7F287F2F8F00BCE968 /* ExhaustiveSearch.swift in Sources */,
+				E558EBC728886AA500BCE968 /* Queue.swift in Sources */,
+				E558EBC928886AB000BCE968 /* Stack.swift in Sources */,
 				E558EB86287F4A3700BCE968 /* QueensSolver.swift in Sources */,
 				E558EB84287F4A2E00BCE968 /* Board.swift in Sources */,
 				E558EB81287F41F100BCE968 /* Backtracking.swift in Sources */,

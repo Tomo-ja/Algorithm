@@ -46,6 +46,6 @@ import Foundation
 var array = [1,4,5,0,1,7,6,3]
 
 //let index = partition(&array, 0, 7)
-quickSort(&array, 0, array.endIndex - 1)
-print(array)
-
+//quickSort(&array, 0, array.endIndex - 1)
+//print(array)
+//
