@@ -51,3 +51,17 @@ var array = [1,4,5,0,1,7,6,3]
 //
 
 
+var nums = Queue<Int>()
+
+nums.enqueue(1)
+nums.enqueue(2)
+nums.dequeue()
+
+nums.enqueue(3)
+nums.enqueue(4)
+
+nums.dequeue()
+
+for num in nums {
+	print(num)
+}

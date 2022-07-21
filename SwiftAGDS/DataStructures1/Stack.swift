@@ -64,15 +64,17 @@ public final class Stack<E> : Sequence {
 		self.current = topOfStack
 	  }
 	  
+	  /// BagIterator that iterates over the items in this bag in arbitrary order. (reverse order)
 	  public mutating func next() -> E? {
 		if let item = current?.item {
 			current = current?.oneBelow
-		  return item
+			return item
 		}
 		return nil
 	  }
 	}
 	
+	/// Returns an iterator that iterates over the items in this stack in reverse order.
 	public func makeIterator() -> StackIterator<E> {
 		return StackIterator(topOfStack)
 	}
